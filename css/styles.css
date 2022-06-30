@@ -1,13 +1,13 @@
 .container {
   width: 1200px;
-    margin: 0px auto;
+  margin: 0px auto;
 }
-.section{
+.section {
   padding-top: 94px;
 }
-.header{
+.header {
   padding-bottom: 32px;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -19,27 +19,34 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #212121;
+
   padding-top: 24px;
   display: flex;
 }
 
-.head-menu{
+.head-menu {
   display: flex;
+  justify-content: space-between;
+  gap: 94px;
 }
 
-.navigation-menu ul {
+.navigation-menu {
   margin: 0;
-  padding: 0;
+  padding-top: 0;
 }
 
 .menu {
   list-style-type: none;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-left: 0px;
+  margin: 0;
+  gap: 46px;
 }
 
-.menu-link,
-.contact,
-.portfolio {
+.menu-link {
   display: block;
   font-family: "roboto";
   font-size: 14px;
@@ -47,28 +54,31 @@
   color: #212121;
   text-decoration: none;
   line-height: 1.14;
-  padding-top: 32px;
 }
 
-.portfolio:hover,
-.portfolio:focus,
-.contact:hover,
-.contact:focus,
+
+
 .menu-link:hover,
 .menu-link:focus {
   color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-link {
-  padding-left: 93px;
+
+.head-main {
+  display: flex;
+  justify-content: space-between;
 }
-.portfolio {
-  padding-left: 46px;
+
+.contact-menu {
+  display: flex;
+  gap: 30px;
+  align-items: baseline;
+  justify-content: center;
+  padding-top: 32px;
 }
-.contact {
-  padding-left: 46px;
-}
-.e-mail,
-.phone {
+
+.e-mail-link,
+.phone-link {
   display: inline;
   color: #757575;
   text-decoration: none;
@@ -77,20 +87,32 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  padding-top: 32px;
 }
 
 .e-mail:hover,
 .e-mail:focus,
 .phone:hover,
-.phone:focus {
+.phone:focus,
+.e-mail-link:hover,
+.e-mail-link:focus,
+.phone-link:hover,
+.phone-link:focus {
   color: #2196f3;
+  fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.e-mail {
-  padding-left: 150px;
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
 }
-.phone {
-  margin-left: 50px;
+.phone-icon {
+  width: 10px;
+  height: 16px;
 }
+
+
 .head {
   display: flex;
   background-color: #2f303a;
@@ -135,12 +157,27 @@
 
 
 .strengths {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
+}
+
+.strength-box {
+  background: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.strength-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .strength {
-
   display: inline-block;
 }
 
@@ -150,7 +187,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-left: 30px;
+
   margin: 0px auto;
 
   max-height: 185px;
@@ -166,9 +203,10 @@
   max-width: 293px;
   height: 75px;
   padding-top: 10px;
-  padding-left: 30px;
+
   margin: 0px;
 }
+
 
 .subheader {
   display: flex;
@@ -179,32 +217,35 @@
   letter-spacing: 0.03em;
   margin-left: auto;
   margin-right: auto;
-justify-content: space-around;
+  justify-content: space-around;
   align-items: center;
 }
-.subheader_tittle{
+.subheader_tittle {
   margin: 0px;
   padding-bottom: 50px;
   font-size: 36px;
   text-align: center;
   padding-left: 0px;
-  
-  
 }
-.subheader_img{
-margin:0px;
-display: block;
+.subheader_img {
+  margin: 0px;
+  display: block;
 }
 
-.image-list{
-display:flex;
-margin:0px;
+.images-list {
+  display: flex;
+  margin: 0px;
   justify-content: space-around;
   align-items: center;
+  gap: 30px;
 }
+
+/* ---- TEAM ----*/
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 0px;
+  margin-top: 94px;
 }
 
   .tittle-list{
@@ -256,13 +297,17 @@ padding-top: 14px;
   color: #757575;
   padding-bottom: 30px;;
 }
+
+/*    FOOTER    */
+
 .footer {
   background-color: #2f303a;
-  display: block;
-  padding-left: 215px;
+  display: flex;
+  justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .logo-footer {
   font-family: "raleway";
   font-style: normal;
@@ -342,6 +387,7 @@ margin-bottom: 94px;
 .project-item{
   border:1px solid #EEEEEE;
    padding-bottom:20px;
+   margin-bottom: 30px;
 
 
 }
